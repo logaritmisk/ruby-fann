@@ -219,10 +219,10 @@ static int FANN_API fann_training_callback(struct fann *ann, struct fann_train_d
     }
 
     int status = NUM2INT(callback);   
-    if (status==-1)
-    {
-        printf("Callback method returned -1; training will stop.\n");
-    }
+    // if (status==-1)
+    // {
+    //     printf("Callback method returned -1; training will stop.\n");
+    // }
     
     return status;
 }
